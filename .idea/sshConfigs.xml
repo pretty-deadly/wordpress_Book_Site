@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="tvigil.bitlampsites.com" id="5d506f7c-21cc-45e9-9f9a-fa5ef605f95a" port="22" customName="bitlamp" nameFormat="CUSTOM" username="tvigil" useOpenSSHConfig="true">
+        <option name="customName" value="bitlamp" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>

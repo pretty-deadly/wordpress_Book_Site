@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="677152c4-71fa-4929-a8fe-bc818dce6436" name="bitlamp" url="http://bitlampsites.com">
+        <fileTransfer rootFolder="/public/html" accessType="SFTP" host="tvigil.bitlampsites.com" port="22" sshConfigId="5d506f7c-21cc-45e9-9f9a-fa5ef605f95a" sshConfig="bitlamp">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

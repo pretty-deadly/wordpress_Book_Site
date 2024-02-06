@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "gulp-rsync": "^0.1.0",
+    "gulp-watch": "^5.0.1"
+  }
+}
