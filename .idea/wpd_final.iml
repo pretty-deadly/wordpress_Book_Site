@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/wp-content/plugins/essential-blocks" isTestSource="false" packagePrefix="EssentialBlocks" />
+      <sourceFolder url="file://$MODULE_DIR$/wp-content/plugins/essential-blocks/includes" isTestSource="false" packagePrefix="EssentialBlocks" />
+      <sourceFolder url="file://$MODULE_DIR$/wp-content/plugins/wpd-books/classes" isTestSource="false" packagePrefix="BookPlugin" />
+      <sourceFolder url="file://$MODULE_DIR$/wp-content/themes" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/wp-content/themes/neve/header-footer-grid" isTestSource="false" packagePrefix="HFG" />
+      <sourceFolder url="file://$MODULE_DIR$/wp-content/themes/neve/inc" isTestSource="false" packagePrefix="Neve" />
+      <sourceFolder url="file://$MODULE_DIR$/wp-includes" isTestSource="false" packagePrefix="PHPMailer" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

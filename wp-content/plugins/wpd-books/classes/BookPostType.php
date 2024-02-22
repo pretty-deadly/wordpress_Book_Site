@@ -92,20 +92,26 @@ class BookPostType extends Singleton
             $bookPublishedDate = get_post_meta($post->ID, BookMeta::PUBLISHED_DATE, true);
             $bookTotalPages = get_post_meta($post->ID, BookMeta::TOTAL_PAGES, true);
             $bookPrice = get_post_meta($post->ID, BookMeta::PRICE, true);
-            $bookGenre = get_post_meta($post->ID, BookMeta::GENRE, true);
+            $bookGenre = wp_get_post_terms($post->ID, self:: GENRE, array("fields" => "names"));
+            if (is_array($bookGenre) && !empty($bookGenre)) {
+                $genreList = implode(',', $bookGenre);
+            }else{
+                $genreList = 'No genre assigned';
+            }
+
 
             $content = '
             <h3 class="border-bottom py-2" id="book-description"><strong>Description</strong></h3>
                            <div>' . $content . '</div>
                            <hr>
                            <ul class="list-inline">
-                           <li class="list-inline-item"><strong>Genre:</strong>' . $bookGenre . '</li>
-                           <li class="list-inline-item"><strong>Publisher:</strong>' . $bookPublisher . '</li>
-                           <li class="list-inline-item"><strong>Published Date:</strong>' . $bookPublishedDate . '</li>
-                           <li class="list-inline-item"><strong>Pages:</strong>' . $bookTotalPages . '</li>
+                           <li class="list-inline-item"><strong>Genre: </strong>' . $genreList . '</li>
+                           <li class="list-inline-item"><strong>Publisher: </strong>' . $bookPublisher . '</li>
+                           <li class="list-inline-item"><strong>Published Date: </strong>' . $bookPublishedDate . '</li>
+                           <li class="list-inline-item"><strong>Pages: </strong>' . $bookTotalPages . '</li>
                            </ul>
                            <div>
-                           <p><strong>Book Price:</strong> $' . $bookPrice . '</p>
+                           <p><strong>Book Price: </strong> $' . $bookPrice . '</p>
                            </div>
             ';
         }

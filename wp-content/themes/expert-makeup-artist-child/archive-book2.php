@@ -1,9 +1,8 @@
 <?php
 /**
  * The template for displaying archive pages
- * @subpackage Expert Makeup Artist
- * @since 1.0
- * @version 0.1
+ * @subpackage Neve
+
  */
 
 get_header(); ?>
@@ -21,8 +20,8 @@ get_header(); ?>
 	<div class="content-area">
 		<main id="skip-content" class="site-main" role="main">
 			<?php
-		    $expert_makeup_artist_archive_page_sidebar = get_theme_mod('expert_makeup_artist_archive_page_sidebar','Right Sidebar');
-		    if($expert_makeup_artist_archive_page_sidebar == 'Left Sidebar'){ ?>
+		    $neve_archive_page_sidebar = get_theme_mod('neve_archive_page_sidebar','Right Sidebar');
+		    if($neve_archive_page_sidebar == 'Left Sidebar'){ ?>
 		    	<div class="row">
 		        	<div id="sidebar" class="col-lg-4 col-md-4"><?php dynamic_sidebar('sidebar-1'); ?></div>
 			        <div class="content_area col-lg-8 col-md-8">
@@ -45,9 +44,9 @@ get_header(); ?>
 							<div class="navigation">
 				                <?php
 				                    the_posts_pagination( array(
-				                        'prev_text'          => __( 'Previous page', 'expert-makeup-artist' ),
-				                        'next_text'          => __( 'Next page', 'expert-makeup-artist' ),
-				                        'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'expert-makeup-artist' ) . ' </span>',
+				                        'prev_text'          => __( 'Previous page', 'neve' ),
+				                        'next_text'          => __( 'Next page', 'neve' ),
+				                        'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'neve' ) . ' </span>',
 				                    ) );
 				                ?>
 				                <div class="clearfix"></div>
@@ -56,7 +55,7 @@ get_header(); ?>
 					</div>
 					<div class="clearfix"></div>
 				</div>			
-			<?php }else if($expert_makeup_artist_archive_page_sidebar == 'Right Sidebar'){ ?>
+			<?php }else if($neve_archive_page_sidebar == 'Right Sidebar'){ ?>
 				<div class="row">
 					<div class="content_area col-lg-8 col-md-8">
 						<section id="post_section">
@@ -78,9 +77,9 @@ get_header(); ?>
 							<div class="navigation">
 				                <?php
 				                    the_posts_pagination( array(
-				                        'prev_text'          => __( 'Previous page', 'expert-makeup-artist' ),
-				                        'next_text'          => __( 'Next page', 'expert-makeup-artist' ),
-				                        'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'expert-makeup-artist' ) . ' </span>',
+				                        'prev_text'          => __( 'Previous page', 'neve' ),
+				                        'next_text'          => __( 'Next page', 'neve' ),
+				                        'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'neve' ) . ' </span>',
 				                    ) );
 				                ?>
 				                <div class="clearfix"></div>
@@ -90,7 +89,7 @@ get_header(); ?>
 					<div id="sidebar" class="col-lg-4 col-md-4"><?php dynamic_sidebar('sidebar-1'); ?>
 					</div>
 				</div>
-			<?php }else if($expert_makeup_artist_archive_page_sidebar == 'One Column'){ ?>
+			<?php }else if($neve_archive_page_sidebar == 'One Column'){ ?>
 					<div class="content_area">
 						<section id="post_section">
 							<?php
@@ -111,16 +110,16 @@ get_header(); ?>
 							<div class="navigation">
 				                <?php
 				                    the_posts_pagination( array(
-				                        'prev_text'          => __( 'Previous page', 'expert-makeup-artist' ),
-				                        'next_text'          => __( 'Next page', 'expert-makeup-artist' ),
-				                        'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'expert-makeup-artist' ) . ' </span>',
+				                        'prev_text'          => __( 'Previous page', 'neve' ),
+				                        'next_text'          => __( 'Next page', 'neve' ),
+				                        'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'neve' ) . ' </span>',
 				                    ) );
 				                ?>
 				                <div class="clearfix"></div>
 				            </div>
 						</section>
 					</div>
-			<?php }else if($expert_makeup_artist_archive_page_sidebar == 'Grid Layout'){ ?>
+			<?php }else if($neve_archive_page_sidebar == 'Grid Layout'){ ?>
 		    	<div class="content_area">
 					<section id="post_section" >
 						<div class="row">
@@ -143,9 +142,9 @@ get_header(); ?>
 						<div class="navigation">
 			                <?php
 			                    the_posts_pagination( array(
-			                        'prev_text'          => __( 'Previous page', 'expert-makeup-artist' ),
-			                        'next_text'          => __( 'Next page', 'expert-makeup-artist' ),
-			                        'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'expert-makeup-artist' ) . ' </span>',
+			                        'prev_text'          => __( 'Previous page', 'neve' ),
+			                        'next_text'          => __( 'Next page', 'neve' ),
+			                        'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'neve' ) . ' </span>',
 			                    ) );
 			                ?>
 			                <div class="clearfix"></div>
@@ -172,9 +171,9 @@ get_header(); ?>
 				                <?php
 				                    // Previous/next page navigation.
 				                    the_posts_pagination( array(
-				                        'prev_text'          => __( 'Previous page', 'expert-makeup-artist' ),
-				                        'next_text'          => __( 'Next page', 'expert-makeup-artist' ),
-				                        'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'expert-makeup-artist' ) . ' </span>',
+				                        'prev_text'          => __( 'Previous page', 'neve' ),
+				                        'next_text'          => __( 'Next page', 'neve' ),
+				                        'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'neve' ) . ' </span>',
 				                    ) );
 				                ?>
 				                <div class="clearfix"></div>

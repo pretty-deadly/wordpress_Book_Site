@@ -71,19 +71,19 @@ class BookMeta extends Singleton
 
             ?>
             <p>
-                <label for="bookPublisher">Publisher:</label>
+                <label for="bookPublisher">Publisher: </label>
                 <input type="text" name="bookPublisher" id="bookPublisher" value="<?= $bookPublisher ?>">
             </p>
             <p>
-                <label for="bookPublishedDate">Publish Date:</label>
+                <label for="bookPublishedDate">Publish Date: </label>
                 <input type="date" name="bookPublishedDate" id="bookPublishedDate" value="<?= $bookPublishedDate ?>">
             </p>
             <p>
-                <label for="bookTotalPages">Page Count:</label>
+                <label for="bookTotalPages">Page Count: </label>
                 <input type="number" name="bookTotalPages" id="bookTotalPages" value="<?= $bookTotalPages ?>">
             </p>
             <p>
-                <label for="bookTotalPages">Price:</label>
+                <label for="bookTotalPages">Price: </label>
                 <input type="text" name="bookPrice" id="bookPrice" value="<?= $bookPrice ?>">
             </p>
 
