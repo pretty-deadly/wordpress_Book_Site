@@ -23,10 +23,10 @@
                             <h3 class="card-title"><?php the_title(); ?></h3>
                             <p class="card-text"><?php the_excerpt(); ?></p>
                             <div class="read-btn">
-                                <a href="<?php the_permalink(); ?>">
+                                <button class="button button-primary" href="<?php the_permalink(); ?>">
                                     <span><?php esc_html_e('Read More', 'neve'); ?></span>
                                     <span class="screen-reader-text"><?php esc_html_e('Read More', 'neve'); ?></span>
-                                </a>
+                                </button>
                             </div>
                         </div>
                     </div>

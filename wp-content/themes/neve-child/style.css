@@ -19,3 +19,57 @@ Text Domain: neve-child
 .nv-page-title-wrap .nv-page-title {
     display: none;
 }
+
+img.wp-post-image {
+    height: 300px;
+    object-fit: contain;
+}
+
+h2.blog-entry-title.entry-title {
+    border-bottom: 2px solid #000000;
+}
+.title.entry-title{
+    text-align: start;
+    border-bottom: 10px solid #0A9BD6;
+    padding-bottom: 20px;
+}
+ul.nv-meta-list {
+    display: none;
+}
+.article-content-col {
+    height: 600px;
+}
+.form_background{
+    background: #0ea2ec;
+}
+
+.article-content-col .content{
+    padding: 30px;
+    margin-top: 45px;
+}
+
+.component-wrap p {
+    display: none;
+}
+.excerpt-wrap ol, .excerpt-wrap ul, .nv-content-wrap ol, .nv-content-wrap ul{
+    list-style-type: none;
+}
+.book-price {
+    font-size: larger;
+}
+ul.list-inline{
+    margin: 0;
+}
+.book-excerpt{
+    font-size: 20px;
+}
+.excerpt-wrap.entry-summary a {
+
+    display: block;
+    text-align: end;
+    padding: 10px 15px;
+}
+.excerpt-wrap.entry-summary a:hover {
+    color: #0A9BD6;
+    font-size: 20px;
+}
